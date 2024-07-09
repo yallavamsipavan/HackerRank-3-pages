@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HackerRank</title>
+    <style>
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        :root {
+            --lhrc: rgb(59, 204, 96);
+            --nhrc: rgb(24, 128, 51);
+            --dhrc: rgb(19, 99, 40);
+            --lgsc: rgb(248, 246, 243);
+        }
+      .note {
+          padding-left: 20px;
+          display: flex;
+          background-color: var(--lhrc);
+          font-weight: bold;
+          color: white;
+      }
+      .btn1 {
+          background-color: white;
+          border-color: transparent;
+          margin: 10px;
+          color: var(--lhrc);
+          border-radius: 5px;
+          cursor: pointer;
+          margin-left: 320px;
+      }
+      .btn1:hover {
+          background-color: #eee;
+      }
+      .container {
+          display: grid;
+          height: 600px;
+          width: 450px;
+          margin-left: 35%;
+          margin-top: 30px;
+          margin-bottom: 50px;
+      }
+      .top {
+          display: grid;
+          text-align: center;
+          margin-bottom: 10px;
+          height: 150px;
+      }
+      .main {
+          display: grid;
+          width: 400px;
+          background: white;
+          margin-left: 12.5px;
+          box-shadow: 5px 5px 20px #ccc;
+      }
+      
+      .heading-image {
+          height: 46px;
+          margin-left: 120px;
+      }
+      .main1-h1 {
+          margin-left: 90px;
+          font-size: 30px;
+      }
+      .main1-p {
+          margin-left: 20px;
+          margin-right: 20px;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14px;
+      }
+      .main2 {
+          margin-left: 10px;
+          display: grid;
+          padding: 10px;
+          background-color: #fff;
+      }
+      .input-tag {
+          height: 50px;
+          width: 340px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          font-size: 20px;
+          padding-left: 10px;
+          border-color: #ddd;
+          border-width: 1px;
+      }
+        .main3 {
+            background-color: var(--lgsc);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            margin-left: 21px;
+            width: 265px;
+            box-shadow: 0px 0px 1px;
+            border-radius: 5px;
+        }
+        .remember {
+            margin-right: 50px;
+        }
+        .main4 {
+            margin-left: 20px;
+            margin-top: 15px;
+            
+        }
+        .btn2 {
+            height: 50px;
+            width: 340px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            background-color: var(--nhrc);
+            border-color: transparent;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn2:hover {
+            background-color: var(--dhrc);
+        }
+        .main-down {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 35%;
+        }
+        .down {
+            display: grid;
+            margin-left: 40px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .down-logo {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="note">
+      <p class="note-para">We use cookies to ensure you have the best browsing experience on our website. Please read our <a><u>cookie policy</u></a> for more information about how we use cookies.</p>
+      <button class="btn1">OK</button>
+    </div>
+    <div class="container">
+      <div class="top">
+        <img src="https://cdn-images-1.medium.com/v2/resize:fill:1600:480/gravity:fp:0.5:0.4/1*UGT1Rh9xLww3JeIDR1F0RQ.png" class="heading-image">
+        <h3>For Developers</h3>
+        <p style="font-family: Arial, Helvetica, sans-serif">Practice coding, prepare for interviews, and get hired.</p>
+      </div>
+      <div class="main">
+          <div class="main1">
+            <h2 class="main1-h1">Forgot Password</h2>
+            <p class="main1-p">No Problem! Enter your email or username below and we will send you an email with instruction to reset your password.</p>
+          </div>
+        <div class="main2">
+          <div class="main2-inp">
+            <input type="text" placeholder="Email or Username" class="input-tag">
+          </div>
+        </div>
+        <div class="main3">
+          <input type="checkbox" style="height:20px; width:25px; margin-right:5px; margin-top: 27px; margin-left: 10px" required>
+          <p style="margin-top:30px">I'm not a Robot</p>
+          <div class="recaptcha" style="margin-left:60px; display:grid">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/800px-RecaptchaLogo.svg.png" style="height:40px; margin-top:5px">
+              <p style="font-size:7px; color:black"><a href="https://policies.google.com/privacy?hl=en">Privacy</a> - <a href="https://policies.google.com/terms?hl=en" style="color:black">Terms</a></p>
+          </div>
+        </div>
+        <div class="main4">
+          <button class="btn2" onclick="alertMsg()">Send Reser Link</button>
+        </div>
+        <p class="main-down">Back to <a href="index.html">Login</a></p>
+      </div>
+    </div>
+    <script>
+        function alertMsg() {
+            window.alert("Password Reset link sent to your Email ID");
+        }
+    </script>
+  </body>
+</html>
